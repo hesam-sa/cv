@@ -370,7 +370,7 @@
 
 	#body.contact div form input,
 	#body.contact div form textarea {
-		-webkit-appearance: none;
+		appearance: none;
 		border-radius: 0;
 		margin: 0 auto 10%;
 		width: 90%;
