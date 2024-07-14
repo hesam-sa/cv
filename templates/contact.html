@@ -20,13 +20,13 @@
 				<h1>Contact us</h1>
 				<img src="{% static 'images/map.png' %}" alt="">
 				<h2>ADDRESS</h2>
-				<p>This is just a placeholder so that you would know what the site would look like.</p>
+				<p>{{address}}</p>
 				<h2>NUMBERS</h2>
-				<a href="index.html">+123456789 or +123456789</a>
+				<a href="{% url 'cv:contact' %}">{{phone}}</a>
 				<h2>Email</h2>
-				<a href="index.html">info@rnrnr.com</a>
-				<h4>JOIN RNRNR NOW</h4>
-				<form action="index.html">
+				<a href="{% url 'cv:contact' %}">{{email}}</a>
+				<h4>JOIN ME NOW</h4>
+				<form action="{% url 'cv:contact' %}">
 					<input type="text" name="name" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
 					<input type="text" name="Address" value="Address" onblur="this.value=!this.value?'Address':this.value;" onfocus="this.select()" onclick="this.value='';">
 					<input type="text" name="Email" value="Email" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
